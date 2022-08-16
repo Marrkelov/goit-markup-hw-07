@@ -17,27 +17,27 @@
   &__item:not(:last-child) {
     margin-bottom: 9px;
   }
+}
 
-  &__link {
+.form-contact__link {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--white-color);
+
+  transition: color var(--speed-animation) var(--animation-type);
+
+  .form-contact__item &:hover,
+  .form-contact__item &:focus {
+    color: var(--accent-color);
+  }
+
+  .cnt-mail &,
+  .cnt-tel & {
     font-size: 14px;
     line-height: 1.71;
 
-    color: var(--white-color);
-
-    transition: color var(--speed-animation) var(--animation-type);
-
-    .form-contact__item &:hover,
-    .form-contact__item &:focus {
-      color: var(--accent-color);
-    }
-
-    .cnt-mail &,
-    .cnt-tel & {
-      font-size: 14px;
-      line-height: 1.71;
-
-      color: var(--footer-color-contact);
-    }
+    color: var(--footer-color-contact);
   }
 }
 
@@ -57,45 +57,45 @@
     display: flex;
     margin-top: 20px;
   }
+}
 
-  &-form__input {
-    width: 359px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-    padding-left: 16px;
+.subscription-form__input {
+  width: 359px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 
-    background-color: transparent;
-    color: var(--footer-color-contact);
+  background-color: transparent;
+  color: var(--footer-color-contact);
 
-    transition: border var(--speed-animation) var(--animation-type);
+  transition: border var(--speed-animation) var(--animation-type);
 
-    &:focus {
-      outline: none;
-      border: 1px solid var(--accent-color);
-    }
-
-    &::placeholder {
-      line-height: 1.25;
-
-      color: var(--footer-color-contact);
-    }
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
   }
 
-  &-btn {
-    display: flex;
-    align-items: center;
-    text-align: center;
+  &::placeholder {
+    line-height: 1.25;
 
-    padding: 10px 29px;
-    margin-left: 12px;
+    color: var(--footer-color-contact);
+  }
+}
 
-    &__svg {
-      margin-left: 10px;
-    }
+.subscription-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding: 10px 29px;
+  margin-left: 12px;
+
+  &__svg {
+    margin-left: 10px;
   }
 }

@@ -9,16 +9,6 @@
     display: flex;
   }
 
-  &__item {
-    position: relative;
-
-    width: calc((100% - 60px) / 3);
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-
   &__text {
     position: absolute;
     display: block;
@@ -36,5 +26,15 @@
 
     color: var(--white-color);
     background-color: var(--doing-text-bg-cards);
+  }
+}
+
+.doing__item {
+  position: relative;
+
+  width: calc((100% - 60px) / 3);
+
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }

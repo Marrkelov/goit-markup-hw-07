@@ -3,13 +3,6 @@
     display: flex;
   }
 
-  &__item {
-    width: calc((100% - 90px) / 4);
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-
   &__icon {
     display: flex;
     justify-content: center;
@@ -38,5 +31,12 @@
   &__text {
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+
+.features__item {
+  width: calc((100% - 90px) / 4);
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }

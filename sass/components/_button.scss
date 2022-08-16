@@ -12,10 +12,10 @@
 
   transition: background-color var(--speed-animation) var(--animation-type),
     box-shadow var(--speed-animation) var(--animation-type);
-}
 
-.btn:hover,
-.btn:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--hover-btn);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--hover-btn);
+  }
 }

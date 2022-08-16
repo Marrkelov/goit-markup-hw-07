@@ -12,10 +12,10 @@
 
   transition: opacity var(--speed-animation) var(--animation-type),
     visibility var(--speed-animation) var(--animation-type);
-}
 
-.data-modal.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
 }
